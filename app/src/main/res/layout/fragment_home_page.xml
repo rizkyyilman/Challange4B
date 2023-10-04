@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow1"
-    tools:context=".fragmenthome.FragmentHomePage">
+    tools:context=".presentation.fragmenthome.FragmentHomePage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".main.MainActivity"
+        tools:context=".presentation.main.MainActivity"
         tools:ignore="RedundantNamespace">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -337,8 +337,7 @@
             app:menu="@menu/bottom_navigation_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

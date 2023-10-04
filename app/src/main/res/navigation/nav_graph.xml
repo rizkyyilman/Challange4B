@@ -6,25 +6,27 @@
     app:startDestination="@id/fragment_home_page">
     <fragment
         android:id="@+id/fragment_home_page"
-        android:name="com.catnip.challange3.fragmenthome.FragmentHomePage"
+        android:name="com.catnip.challange3.presentation.fragmenthome.FragmentHomePage"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
-            android:id="@+id/action_fragment_home_page_to_fragmentDetail"
-            app:destination="@id/fragmentDetail" />
+            android:id="@+id/action_fragment_home_page_to_detailActivity"
+            app:destination="@id/detailActivity" />
     </fragment>
-    <fragment
-        android:id="@+id/fragmentDetail"
-        android:name="com.catnip.challange3.fragmentdetail.FragmentDetail"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" >
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.catnip.challange3.presentation.detailactivity.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" >
         <argument
-            android:name="detailmenu"
+            android:name="menu"
             app:argType="com.catnip.challange3.model.DetailMenu"
             app:nullable="true"
             android:defaultValue="@null" />
-    </fragment>
+    </activity>
     <argument
-        android:name="menu"
-        app:argType="com.catnip.challange3.model.DetailMenu" />
+        android:name="detailmenu"
+        app:argType="com.catnip.challange3.model.DetailMenu"
+        app:nullable="true"
+        android:defaultValue="@null" />
 </navigation>

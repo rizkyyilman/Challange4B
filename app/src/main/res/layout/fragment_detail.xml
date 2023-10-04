@@ -5,7 +5,7 @@
     android:id="@+id/fl_fragmentDetail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentdetail.FragmentDetail">
+    tools:context=".presentation.fragmentdetail.FragmentDetail">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_banner_detail"

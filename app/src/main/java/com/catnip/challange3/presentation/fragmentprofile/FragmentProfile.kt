@@ -1,4 +1,4 @@
-package com.catnip.challange3.fragmentprofile
+package com.catnip.challange3.presentation.fragmentprofile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

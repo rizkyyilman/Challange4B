@@ -1,4 +1,4 @@
-package com.catnip.challange3.fragmenthome.adapter
+package com.catnip.challange3.presentation.fragmenthome.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

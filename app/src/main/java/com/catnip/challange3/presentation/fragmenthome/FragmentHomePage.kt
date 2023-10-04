@@ -1,5 +1,5 @@
 // FragmentHomePage.kt
-package com.catnip.challange3.fragmenthome
+package com.catnip.challange3.presentation.fragmenthome
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.catnip.challange3.data.MenuDataSource
 import com.catnip.challange3.data.MenuDataSourceImpl
 import com.catnip.challange3.databinding.FragmentHomePageBinding
-import com.catnip.challange3.fragmenthome.adapter.AdapterLayoutMode
-import com.catnip.challange3.fragmenthome.adapter.FragmentHomePageAdapter
+import com.catnip.challange3.presentation.fragmenthome.adapter.AdapterLayoutMode
+import com.catnip.challange3.presentation.fragmenthome.adapter.FragmentHomePageAdapter
 import com.catnip.challange3.model.DetailMenu
 
 class FragmentHomePage : Fragment() {
@@ -29,9 +29,12 @@ class FragmentHomePage : Fragment() {
     }
 
     private fun navigateToDetail(detailmenu: DetailMenu) {
-        val action = FragmentHomePageDirections.actionFragmentHomePageToFragmentDetail(detailmenu)
+        val action = FragmentHomePageDirections.actionFragmentHomePageToDetailActivity()
         findNavController().navigate(action)
     }
+
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

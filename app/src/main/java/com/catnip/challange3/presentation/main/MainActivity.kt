@@ -1,4 +1,4 @@
-package com.catnip.challange3.main
+package com.catnip.challange3.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
