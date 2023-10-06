@@ -24,9 +24,15 @@
             app:nullable="true"
             android:defaultValue="@null" />
     </activity>
+
     <argument
         android:name="detailmenu"
         app:argType="com.catnip.challange3.model.DetailMenu"
         app:nullable="true"
         android:defaultValue="@null" />
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.catnip.challange3.presentation.fragmentprofile.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

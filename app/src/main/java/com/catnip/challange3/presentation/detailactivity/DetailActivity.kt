@@ -30,7 +30,6 @@ class DetailActivity : AppCompatActivity() {
             binding.tvDescriptionMenu.text = ""
         }
 
-        // Handle tombol kembali
         binding.ivBackIcon.setOnClickListener {
             onBackPressed()
         }
